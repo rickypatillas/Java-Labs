@@ -2,32 +2,49 @@
 Answer the following questions:
 
 1) What is an array?
+    -a collection of variables of the same type, referred to by a common name.
 
 2) What the code required to create (instantiate) a String array with size 10 named "cats"?
+    -int cat[] = new int [10];
 
 3) What is a multidimensional array?
+    -an array of arrays
 
 4) What is the code required to create (instantiate) a 2-dimensional int array that is 6 high and 6 wide named "scores"?
+    -int scores[][] = new int [6][6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
+    -
 
 6) What is an ArrayIndexOutOfBoundsException?
+    -a run-time error to overrun or underrun teh end of an array.
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
+    -
 
 8) What is the maximum allowable size of an array in Java?
+    -
 
 9) What is a bubble sort?
+    -a simple, basic sort of array which oerates by making several passes though the array, exchanging
+    out-of-place elements when necessary. The # of passes required to ensure that the array is sorted id =
+    to 1 less than the number of elements in the array.
 
 10) How does a bubble sort work?
+    -see above ^^^
 
 11) When might you use an irregular array? What is a good example of an irregular array?
+    -even though teh use of irregular arrays is not recommended for mosmt applications, given that it runs contrary to what
+    peple expect to find when a mulitdimensinal array is encountered. nevertheless, irregulars can be used effectively
+    when you need very large two-dimensionals array sparcely populated.
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
+    -
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
 
 14) What is a queue?
+    -
 
 15) What are the two primary operations that a queue performs?
 

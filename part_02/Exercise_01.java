@@ -16,10 +16,16 @@ import java.util.Scanner;
 public class Exercise_01 {
 
     public static void main(String[] args) throws java.io.IOException {
-
+        // create scaner object
         Scanner input = new Scanner(System.in);
 
+        //promts user
         System.out.print("Enter a degree in Celsius: ");
+
+        //stores input in variable
+        double degreeCelsius = input.nextDouble();
+
+        System.out.println("Degree in Fahrenheit: " + (9*(degreeCelsius/5) +32));
 
 
         

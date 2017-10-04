@@ -15,9 +15,25 @@ package part_01;
 public class Exercise_11 {
 
     public static void main(String[] strings) {
+        int population = 380123456;
+        //current year
+        int year = 2017;
 
-        //...
-
-
+        //loop from current year for next 4
+        for (int i = 2017; i <= 2020; i++) {
+            //loop through every second of the year
+            for (int s = 0; s <= 31536000; s++){
+                //second divisible by 6 someone is born
+                if (s%6 == 0) {
+                    population++;
+                }
+                //someone immigrates every 40
+                if (s % 40 == 0) {
+                    population++;
+                }
+                }
+            System.out.println("US population in " +i + "is " + population);
+            }
+        }
     }
-}
+

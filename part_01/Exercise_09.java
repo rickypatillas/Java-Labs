@@ -11,6 +11,13 @@ public class Exercise_09 {
 
     public static void main(String[] strings) {
 
-        //...
+        double width = (2.4);
+        double height = (6.4);
+
+        double area = (width*height);
+        double perimeter = (width+height);
+
+        System.out.println("the area of a rectangle is " + area);
+        System.out.println("the perimeter of a rectangle is " + perimeter);
     }
 }

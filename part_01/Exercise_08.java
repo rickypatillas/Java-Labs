@@ -14,6 +14,18 @@ public class Exercise_08 {
 
     public static void main(String[] args) {
 
-        //...
+        double area;
+        double perimeter;
+        double radius;
+
+        radius = 3.14;
+        area = (3.1416*(radius*radius));
+        perimeter = ((2*3.1416)*radius);
+
+        System.out.println("the area is " + area);
+        System.out.println("the perimeter is" + perimeter);
+
+
+
     }
 }

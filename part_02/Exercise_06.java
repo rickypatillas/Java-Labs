@@ -14,6 +14,29 @@ import java.util.Scanner;
 public class Exercise_06 {
 
     public static void main(String[] args) {
+        int num = 0;
+
+         switch (num) {
+             case 0:
+                 System.out.println("ZERO");
+                 break;
+             case 1:
+                 System.out.println("UNO");
+                 break;
+             case 2:
+                 System.out.println("DOS");
+                 break;
+             case 3:
+                 System.out.println("TRES");
+                 break;
+             case 4:
+                 System.out.println("FOUR");
+                 break;
+             default:
+                 System.out.println(num + " is whatevs");
+
+         }
+
 
     }
 }

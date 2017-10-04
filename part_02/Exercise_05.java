@@ -1,5 +1,7 @@
 package part_02;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Scanner;
 
 /**
@@ -12,8 +14,8 @@ import java.util.Scanner;
  *
  */
 public class Exercise_05 {
-
-    public static void main(String[] args) {
+    public void main (String[] args) {
 
     }
+
 }

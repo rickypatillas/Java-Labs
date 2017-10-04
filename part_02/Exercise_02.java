@@ -21,8 +21,16 @@ public class Exercise_02 {
 
         System.out.print("Enter radius: ");
         double radius = input.nextDouble();
+
         System.out.print("Enter length: ");
         double length = input.nextDouble();
+
+        area = radius * radius * 3.1415;
+        System.out.println("Area is " + area);
+
+        volume = area * length;
+        System.out.println("Volume is "+ volume);
+
         //...
     }
 }
