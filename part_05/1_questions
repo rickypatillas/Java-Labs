@@ -2,25 +2,39 @@
 Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
+-public, private, and protected.
 
 2) Briefly explain each acm and how they differentiate from each other?
+-public is open to all.
+-private is only accessible by members of its own class.
+-protected is kinda like only applicable in the same folder
 
 3) Why do we use acm's?
+-to control the access and modification of our program
 
 4) What is the risk of not using acm's?
+-that it will be default and set to public, meaning anyone could go and have access/modify some
+of your info
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
+-
 
 6) Write a method signature that returns an object of type "Car".
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
+-that the value of some objects will be passed by reference.
 
 8) What is method overloading?
+-method overloading is when 2 or more methods within the same class can share the same name,
+as long as their parameter declarations are different.
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
+-method overloading supports polymorphism because it is one way that Java implemetns teh "one interface,
+multiple methods." As compared to C where you'd have to declare each thing individually and separately.
 
 10) How do you overload a method? What signifies that a method is being overloaded?
+-
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
 
