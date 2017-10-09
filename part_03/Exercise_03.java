@@ -16,9 +16,6 @@ class Exercise_03 {
         // use a for loop to iterate 100 times {
         for (int i = 0; i < 100; i++) {
             int Random = (1) + (int) (Math.random() * (12 - 1 + 1));
-
-
-
             // Generate a random int between >= 1 and <= 12
 //
             // call getMonthName(int month) and pass your random int

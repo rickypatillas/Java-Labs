@@ -38,8 +38,8 @@ public class Exercise_04 {
             " and the winner is " + winner);
     }
 
-    public static String getHand(int hand) {
-        String handStr = "";
+    public static String getHand(int hand) { //where is this getting from?
+        String handStr = "";  //the handStr is coming from where?
         // use a switch statement to determine each players hand
         // 0 = scissor, 1 = rock, 2 = paper
         switch(hand){

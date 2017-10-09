@@ -9,7 +9,7 @@ class Exercise_06 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the time zone offset to GMT (ie, -8 or 8): ");
+        System.out.print("Enter the time zone offset to GMT (ie, -8 or 8: ");
         long timeZoneChange = input.nextInt();
 
         // Get total milliseconds since midnight, 1/1/1970
@@ -44,12 +44,12 @@ class Exercise_06 {
         long clockHour = (currentHour + timeZoneChange);
              System.out.println(clockHour);
 
-        if(currentHour <=12){
-            System.out.println(currentHour + " am");
+        if(clockHour <=12){
+            System.out.println(currentHour + " PM");
         }
         else{
-            System.out.println((currentHour -= 12) + " pm");
+            System.out.println((currentHour -= 12) + " AM");
             }
-
+        //this is coming back soon. Not gonna get any easier
     }
 }

@@ -14,18 +14,20 @@ package part_03;
  **/
 class BikeShop {
     public static void main(String[] args) {
-        Motorcycle ryanBike = new Motorcycle(1250, "Chopper", "HarleyDavidson"); //string must always be on ""
+        Motorcycle ryanBike = new Motorcycle(1250, "Chopper", "HarleyDavidson"); //string "" must always be on
         Motorcycle rickyBike = new Motorcycle(750, "Cafe Racer", "Honda");
+        //create an object using motorcycle class because we are importing those variables
 
-        Rider ryan = new Rider("Ryan", 35, 6.2);
-        Rider ricky = new Rider("Ricky", 27, 6.0);
+        Rider ryan = new Rider("Ryan", 35, 6.2); //object of the rider class
+        Rider ricky = new Rider("Ricky", 27, 6.0); //assigning name to the rider
+
         Gear ryanGear = new Gear("full", "vest", "boots");
-        Gear rickyGear = new Gear("open", "leather", "converse");
+        Gear rickyGear = new Gear("open", "leather", "converse"); //object from the gear class
 
-        ryan.setRiderBike(ryanBike);
+        ryan.setRiderBike(ryanBike); //where did the RiderBike come from?
         ryan.setRiderGear(ryanGear);
         ryanBike.increment(100);
-        System.out.println(ryan.name + " has a " + ryanBike.brand + " and wears " + ryanGear.jacket
+        System.out.println(ryan.name + " has a " + ryanBike.brand + " and wears " + ryanGear.jacket + " "
                 + ryanGear.boots);
 
         ricky.setRiderBike(rickyBike);
@@ -37,11 +39,11 @@ class BikeShop {
     }
 }
 
-class Motorcycle {
-    int cc;
+class Motorcycle { //start with a class here plus the variables
+    int cc; // instance variables of objects of class Motorcycle
     String type, brand;
 
-    Motorcycle(int cc, String type, String brand) {
+    Motorcycle(int cc, String type, String brand) { //creation of the object
         this.cc = cc; // this.cc is so we can use just the name cc
         this.type = type;
         this.brand = brand;
@@ -49,7 +51,7 @@ class Motorcycle {
 
     public void increment(int ccChange) {
         this.cc += ccChange;
-    }
+    } //WHOA WHAT IS THIS??
 
 }
 class Rider{
@@ -57,7 +59,7 @@ class Rider{
     String name;
     int age;
     double height;
-    Gear riderGear;
+    Gear riderGear; //this was added afterwards
     Motorcycle riderBike;
 
     Rider(String name, int age, double height){
@@ -68,10 +70,10 @@ class Rider{
 
     public void setRiderBike(Motorcycle bike) {
         this.riderBike = bike;
-    }
+    } //what is this?
 
     public void setRiderGear(Gear gear) {
-        this.riderGear = gear;
+        this.riderGear = gear; //where does the "set" come from?
     }
 }
 

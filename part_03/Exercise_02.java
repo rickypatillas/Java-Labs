@@ -14,7 +14,7 @@ class Guns {
     double caliber;
     String name;
 
-    Guns(String name, int rounds, double caliber) {
+    Guns(String name, int rounds, double caliber) { //the creation of my constructor
         this.rounds = rounds;
         this.name = name;
         this.caliber = caliber;
@@ -27,14 +27,14 @@ class Guns {
 
     public int getRounds() {
         return rounds;
-        }
+        } //this method returns a variable: rounds
 
     public  double getCaliber() {
         return caliber;
-        }
+        } //this method will return a double value of caliber
 
     public static void main(String[] args) {
-        Guns revolver = new Guns("revolver", 6, .55);
+        Guns revolver = new Guns("revolver", 6, .55); //the creations of my objects
         Guns rifle = new Guns("rifle", 12, .350);
 
         double revolverCal = revolver.getCaliber();

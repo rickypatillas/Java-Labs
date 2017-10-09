@@ -1,5 +1,7 @@
 package part_04;
 
+import java.util.Scanner;
+
 /**
 
  Read in 10 integers from the user. Place all 10 integers into an array in the order they were received.
@@ -13,3 +15,33 @@ package part_04;
 
  */
 
+class Intento {
+    public static void main(String[] args) {
+        //do i create the array here?
+
+        int[] banana = new int[10];
+
+        Scanner input = new Scanner(System.in);
+
+        for (int i = 0; i < banana.length; i++) {
+            System.out.print("Type ten numbers: ");
+            int coco = input.nextInt();
+
+            banana[i] = coco;
+        }
+
+        for (int i = 0; i < banana.length; i++) {
+            if (i%2 != 0 ) {
+                System.out.println(banana[i]);
+            }
+        }
+
+        for (int i = (banana.length - 1); i >= 0; i--){
+            if (i%2 == 0){
+                System.out.println(banana[i]);
+            }
+
+        }
+
+    }
+}

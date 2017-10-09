@@ -11,3 +11,25 @@ package part_04;
  40 41 42 43 44 45 46 47 48 49
 
  */
+    //
+class TwoDoritos{
+
+    public static void main(String[]args){
+
+        int m, k;
+        int count = 0;
+        int[][] myVowels = new int[5][10];
+
+        for(m = 0; m < myVowels.length; m++){
+            for(k = 0; k < myVowels[m].length; k++){ //myVowels[m] returns its own array
+                myVowels[m][k] = count;
+                count++;
+                System.out.print(myVowels[m][k] + " ");
+              }
+            System.out.println();
+
+            }
+
+        }
+
+}
