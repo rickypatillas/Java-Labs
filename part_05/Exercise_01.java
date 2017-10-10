@@ -26,7 +26,7 @@ class Class_01 {
         nihongo.setPio(6);
         System.out.println(nihongo.getPio());
 
-        System.out.println(box.myMeth()); ;
+        System.out.println(box.myMeth());
 
     }
 }

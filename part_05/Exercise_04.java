@@ -8,3 +8,11 @@ package part_05;
  * within each instance of Class_02 to modify Class_02's private instance variables.
  *
  */
+class Alpha{
+
+}
+
+
+class Zetha{
+
+}
