@@ -9,7 +9,7 @@ package part_05;
 class Tacos {
     public static void main(String[] args) {
 
-        Ingredients elFogon = new Ingredients("Pork", "Costillas");
+        Ingredients elFogon = new Ingredients("Pork", "Costilla");
 
         Ingredients donBuey = new Ingredients("Beef", "Pastor");
 
