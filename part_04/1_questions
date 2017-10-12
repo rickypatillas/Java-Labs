@@ -14,21 +14,27 @@ Answer the following questions:
     -int scores[][] = new int [6][6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
-    -
+    -sting dogName = dog[9];
 
 6) What is an ArrayIndexOutOfBoundsException?
     -a run-time error to overrun or underrun teh end of an array.
+    -ex. if you create an array lenght 10th and thent ry to retrieve an item from teh 10th index creates IndexOutofBounds
+    error because final index is 9.
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
-    -
+    -int secondtoLast = arrayName[arrayName.lenght - 2];
 
 8) What is the maximum allowable size of an array in Java?
-    -
+    -2^31-1
 
 9) What is a bubble sort?
-    -a simple, basic sort of array which oerates by making several passes though the array, exchanging
+    -a simple, basic sorting algorithm which oerates by making several passes though the array, exchanging
     out-of-place elements when necessary. The # of passes required to ensure that the array is sorted id =
     to 1 less than the number of elements in the array.
+    -a very inefficinet sorting algorithm. Reuires a nested for loop. outer loop must rin as many times as the lenght of the lenght
+    of collection - 1. Inner loop cmpares sequential pairs and swaps them if needed bbe. Depending on wehterh you are
+    starting from the bottom or the top, the (next) smallest number will bubble to the top on each subsequent loop (or viceversa
+    largest number bubbleto the bottom on each loop).
 
 10) How does a bubble sort work?
     -see above ^^^
@@ -39,29 +45,63 @@ Answer the following questions:
     when you need very large two-dimensionals array sparcely populated.
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
-    -
+    - for(int i = 0; i < array.lenght; i++);
+        sout(arrayName[i]);
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
+    - int i = 0;
+    while(1 != array.lenght - 1) {
+        sout(array[i]);
+        i++;
+    }
 
 14) What is a queue?
-    -
+    -a lsit in which elements are accessed in a first-in-first-out order.
 
-15) What are the two primary operations that a queue performs?
+15) What are the two primary methods that a queue performs?
+    -put and get
 
 16) What is a stack?
+    -It's a list in which elements are accessed in first-in-first-out order
 
 17) What differentiates stacks and queues?
+filo vs fifo
 
 18) When would you use an enhanced for loop?
+    -when you want to iterate over every item in a collection and don't need access to the index
 
 19) What is "The Collections Framework"? What classes does it include?
+    -set of classes that implements vaiuos datastructures in java. It includes lists, vectors, sets and maps.
 
 20) How do you iterate over a two-dimensional array? Demonstrate using psuedo code.
+    - for (int [] x : nums) {       //assumes nums is a 2D array, ie. nums[][]
+        for(int y : x) {
+            sout(y);
+            }
+        }
+
+   - for(int i = 0; i < nums.lenght; i++){
+        for(int j = 0; j < nums[i].lenght; j++){
+        sout(nums[i][j];
+        }
+      }
 
 21) What is a String?
+    -a datatype composed of words
+    -object type it is not primitive type
+    -a string of chars
+
 
 22) What are a few common methods for operating on Strings?
+    --String str = "hey My Name is";
+    -int x = str.lengt();
+    -str = str.replace("h", "H");
+    str = str.subString(0, 6);
 
 23) What does "Strings are immutable" mean?
+    -cannot change them, eve if you are just adding one character to an existing string -  teh old string
+    deleted and a new object is created
 
 24) Using the CLI, how do you invoke a Java application and provide two parameters to the main method?
+    -$javac ClassName.java
+    -$java ClassName arg1 arg2

@@ -6,3 +6,53 @@ package part_05;
  * just once, in one place, set the static instance variable in class_02. Afterwards, print out the value of each instance
  * variable and the static variable for each class.
  */
+class Tacos {
+    public static void main(String[] args) {
+
+        Ingredients elFogon = new Ingredients("Pork", "Costillas");
+
+        Ingredients donBuey = new Ingredients("Beef", "Pastor");
+
+        Ingredients.setKg(1.5);
+
+        elFogon.Precio(75.50);
+        donBuey.Precio(72.75);
+
+        System.out.println("The two best taco joints in Playa are " + elFogon.tacoStand() + " " +
+                donBuey.tacoStand();
+
+
+
+
+
+    }
+}
+
+
+class Ingredients {
+    private String carne;
+    private String type;
+    private static double kg;
+    private double price;
+
+
+    public Ingredients(String carne, String type) {
+        this.carne = carne;
+        this.type = type;
+    }
+
+    public static double getKg() {
+        return kg;
+    }
+
+    public static void setKg(double kg) {
+        Ingredients.kg = kg;
+    }
+
+    public double Precio(double price){
+        return price;
+    }
+
+    public void tacoStand(){
+    }
+}

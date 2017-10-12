@@ -6,39 +6,42 @@ package part_05;
  * Class_02. Then, from within method_01, pass the instance of Class_02 to a new method, method_02. Within method_02
  * modify the instance variables of Class_02 once again. Use System.out.println at various points to demonstrate the
  * flow of execution and the varying state of each private variable. You can name these classes whatever you want.
- *
  */
 
-class Kof_02{
+class Kof_02 {
     public static void main(String[] args) {
-        Kof_02 lion = new Kof_02();
-        Kof_97 ralph = new Kof_97();
+        //name of fighters
+        Kof_97 leona = new Kof_97();
+        Kof_97 iori = new Kof_97();
 
-        lion.updateKof97(ralph);
+        //stats of fighter no. 1
+        System.out.print("Leona's stats are: ");
 
+        leona.setKicking(9);
+        leona.setPunching(3);
+        leona.setType_of_power("Physical");
+
+        System.out.println("kicking: " + leona.getKicking() + ", punching: " + leona.getPunching()
+                + ", type of power: " + leona.getType_of_power() + ".");
+
+        //stats of fighter no. 2
+        System.out.println("Iori's stats are:");
+
+        iori.setKicking(7);
+        iori.setPunching(5);
+        iori.setType_of_power("Meta-physical");
+
+        System.out.println("kicking: " + iori.getKicking() + ", punching: " + iori.getPunching()
+                + ", type of power: " + iori.getType_of_power() + ".");
     }
 
-    public void updateKof97(Kof_97 black){
-        black.setKicking(85);
-        updateKof97again(black);
-    }
-
-    public void updateKof97again(Kof_97 white){
-
-
-    }
 }
 
 
-class Kof_97{
+class Kof_97 {
     private int punching;
     private int kicking;
-    private int power;
-    private String fire_type;
-
-    public int upperImpact{
-
-    }
+    private String type_of_power;
 
     public int getPunching() {
         return punching;
@@ -56,31 +59,11 @@ class Kof_97{
         this.kicking = kicking;
     }
 
-    public int getPower() {
-        return power;
+    public String getType_of_power() {
+        return type_of_power;
     }
 
-    public void setPower(int power) {
-        this.power = power;
+    public void setType_of_power(String type_of_power) {
+        this.type_of_power = type_of_power;
     }
-
-    public String getFire_type() {
-        return fire_type;
-    }
-
-    public void setFire_type(String fire_type) {
-        this.fire_type = fire_type;
-    }
-
-    public int getUpperImpact() {
-        return upperImpact;
-    }
-
-    public void setUpperImpact(int upperImpact) {
-        this.upperImpact = upperImpact;
-    }
-
-    public
-
-
 }
