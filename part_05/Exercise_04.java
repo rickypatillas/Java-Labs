@@ -30,7 +30,9 @@ class Uniforms {
     private String name;
     private char size;
     private int year;
-
+    int champions_league;
+    int domestic_league;
+    String total;
 
     Uniforms(int year) {
         this.year = year;
@@ -64,11 +66,6 @@ class Uniforms {
     public int getYear() {
         return year;
     }
-
-    int champions_league;
-    int domestic_league;
-    String total;
-
 
     public int achievements(int champions_league, int domestic_league) {
         return (champions_league + domestic_league); //how can i print them out without adding them?

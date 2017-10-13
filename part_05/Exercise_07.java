@@ -13,13 +13,18 @@ class Tacos {
 
         Ingredients donBuey = new Ingredients("Beef", "Pastor");
 
-        Ingredients.setKg(1.5);
+       // elFogon.setKg(1.5);
+        donBuey.setKg(2.5);
 
         elFogon.Precio(75.50);
         donBuey.Precio(72.75);
 
         System.out.println("The two best taco joints in Playa are " + elFogon.tacoStand() + " " +
-                donBuey.tacoStand();
+                donBuey.tacoStand());
+
+        System.out.println(elFogon.getKg());
+        System.out.println(donBuey.getKg());
+
 
 
 
@@ -41,11 +46,11 @@ class Ingredients {
         this.type = type;
     }
 
-    public static double getKg() {
+    public double getKg() {
         return kg;
     }
 
-    public static void setKg(double kg) {
+    public void setKg(double kg) {
         Ingredients.kg = kg;
     }
 
@@ -53,6 +58,7 @@ class Ingredients {
         return price;
     }
 
-    public void tacoStand(){
+    public String tacoStand(){
+        return "taco";
     }
 }
