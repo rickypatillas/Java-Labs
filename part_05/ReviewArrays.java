@@ -32,7 +32,7 @@ public class ReviewArrays {
         System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 
         for(int k = 0; k < phoebe.length; k++){
-            System.out.println(phoebe[phoebe.length -1]-1);
+            System.out.println(phoebe[phoebe.length - 1 - k]);
         }
 
         System.out.println("$$$$$$$$for each $$$$$$$$$$$$$$$$$$");
