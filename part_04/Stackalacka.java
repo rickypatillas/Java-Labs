@@ -36,11 +36,24 @@ class Stack {
 
 class StackDemo {
     public static void main(String[] args) {
-        Stack newStack = new Stack(3);
-        newStack.put('a');
-        newStack.put('b');
+        Stack newStack = new Stack(5);
+        try {
+            newStack.put('a');
+        } catch (StackFullException panda) {
+            System.out.println(panda.toString());
+        }
+        try {
+            newStack.put('b');
+        } catch (StackFullException bear) {
+            System.out.println(bear.toString());
+        }
 
-        System.out.println(newStack.get());
+        try {
+            System.out.println(newStack.get());
+        } catch (StackEmptyException panda) {
+            System.out.println(panda.toString());
+
+        }
 
     }
 
