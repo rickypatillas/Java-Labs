@@ -1,4 +1,4 @@
-package part_05;
+package RandomEx.Reviews;
 
 public class ReviewForLoops {
     //write a traditional for loop 10 times - doing something slightly different each time

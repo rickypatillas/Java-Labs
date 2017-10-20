@@ -36,7 +36,7 @@ class Stack {
 
 class StackDemo {
     public static void main(String[] args) {
-        Stack newStack = new Stack(5);
+        Stack newStack = new Stack(1);
         try {
             newStack.put('a');
         } catch (StackFullException panda) {

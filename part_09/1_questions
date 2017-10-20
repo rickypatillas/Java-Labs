@@ -1,21 +1,34 @@
 
 1) What is the difference between a byte stream and a character stream?
+a byte stream goes 8-8-8 whereas a character stream goes by 16-16-16
 
 2) List at least 3 examples of byte stream classes?
+    -BufferInputStream
+    -FileInputStream
+    -ObjectOutputStream
 
 3) List at least 3 examples of character stream classes?
+    -BUfferReader
+    -BUfferWriter
+    -InputStreamReader
 
 4) What is try-with-resources? Why is it super cool?
+    -sometimes referred as automatic resource management. It prevents situations in which a file is
+    inadvertently not released after it is no longer needed. So it closes a file without having to
+     do it manually
 
 5) Demonstrate a try-wth-resources block:
 
 6) What does the read() method on the FileInputStream class return?
+    -
 
 7) What is the documentation above of the FileInputStream class header say? (hint: inside /** ... */)
 
 8) Is a DataOutputStream used for bytes or characters?
 
 9) What is a BufferedReader?
+    -A class for reading console input which supports a buffer input stream. However, you cannot
+
 
 10) Why does a BufferedReader require an InputStreamReader as an argument?
 

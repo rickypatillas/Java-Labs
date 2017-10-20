@@ -6,6 +6,8 @@ public class Camote {
 
        Yam camotito = new Yam();
 
+
+
         try {
             camotito.elCarrito(5);
         } catch (Exception panda) {

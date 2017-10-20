@@ -1,4 +1,4 @@
-package part_05;
+package RandomEx.Reviews;
 
 public class ReviewForEach {
     public static void main(String[] args) {
