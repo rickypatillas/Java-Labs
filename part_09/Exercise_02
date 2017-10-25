@@ -1,2 +1,23 @@
 
 Demonstrate how to read file using BufferedInputStream - print each byte - be sure to close all connections
+
+
+class ReadChars{
+    public static void main(String args[])
+            throws IOException
+    {
+        char c;
+        String s;
+        BufferedReader br = new
+                BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Enter characters, period to quit.");
+
+        // read characters
+        do {
+            c = (char) br.read();
+            System.out.println(c);
+
+        } while(c != '.');
+    }
+}
