@@ -26,14 +26,22 @@ public class Zincronadas implements Runnable{
     }
 
 
-    public void elemental(){
-        if(a < r) {
-            System.out.println("Fire");
-        }else if (x < a) {
-            System.out.println("water");
-        }else;
-             System.out.println("grass");
+   synchronized public void elemental(){
+        if(c != b ){
+            System.out.println(a);
+            return;
 
         }
 
+    }
+
 }
+
+/*
+TODO
+similar to traffic light example on java_books-enums-TrafficLight
+create and develop this concept once you have time and more knowledge.
+*/
+
+
+

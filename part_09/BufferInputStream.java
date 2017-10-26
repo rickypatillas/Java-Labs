@@ -14,12 +14,12 @@ public class BufferInputStream {
 
     public static void main(String[] args) throws IOException {
 
-        String unicorn;  // variable String for readLine
+        int unicorn;  // variable String for readLine
 
 
         try (BufferedReader a = new BufferedReader((new FileReader("/home/ricardo/Desktop/nomads/text_copy.txt")))) {
-            while ((unicorn = a.readLine()) != null) {   //buffer has capacity for 3 fields. Buff, FileReader and txt
-                //which is in bytes. Must put != null to verify it's not empty
+            while ((unicorn = a.read()) != -1) {   //buffer has capacity for 3 fields. Buff, FileReader and txt
+                //which is in bytes. Must put != -1 to verify it's not going over 0
                 System.out.println(unicorn);
             }
         }

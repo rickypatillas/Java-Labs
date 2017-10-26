@@ -7,3 +7,4 @@ Create an application that demonstrates how to create threads by extending Threa
 
 Create an application that demonstrates the use of synchronized(), setPriority(), join(), getName() on
 threads
+Check out Zincronadas
