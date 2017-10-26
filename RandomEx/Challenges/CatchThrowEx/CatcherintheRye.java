@@ -1,4 +1,4 @@
-package RandomEx.CatchThrowEx;
+package RandomEx.Challenges.CatchThrowEx;
 
 public class CatcherintheRye {
     public static void main(String[] args) {

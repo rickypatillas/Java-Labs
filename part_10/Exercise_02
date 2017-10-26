@@ -1,6 +1,9 @@
 
 Create an application that demonstrates how to create threads by implementing the runnable interface
+Check ConnectDots and ConnectDotsController
 
 Create an application that demonstrates how to create threads by extending Thread
+    Check Palgan and PalganController
 
-Create an application that demonstrates the use of synchronized(), setPriority(), join(), getName() on threads
+Create an application that demonstrates the use of synchronized(), setPriority(), join(), getName() on
+threads

@@ -26,3 +26,5 @@
 7) What are bounded and unbounded wildcards in Generics?
 
 8) What is difference between List<? extends T>  and  List <? super T> ?
+extends means the generic type must be a subclass of T
+super means the generic type must be a parent class of T
