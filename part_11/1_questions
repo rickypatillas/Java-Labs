@@ -20,6 +20,7 @@
     String s = returnType("String");
 
 5) What is a Bounded Type Parameter?
+One that can only use a certain type of Integers
 
 6) Demonstrate the use of Generic Wildcard in a method signature:
 

@@ -13,3 +13,24 @@ Complete the code so that it prints the following lines:
  World
 
 */
+
+class Excercise_01{
+
+
+    public  static <T> void  printArray(T[] papaya){
+
+        for(T x : papaya){
+            System.out.println(x);
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        Integer[] numArray = {1, 2, 3};
+        String[] wordsArray = {"Hello", "World"};
+
+        printArray(numArray);  //call method . arrayNames\
+        printArray(wordsArray);
+    }
+}

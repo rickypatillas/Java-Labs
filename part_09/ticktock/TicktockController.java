@@ -12,7 +12,7 @@ public class TicktockController {
         } catch(InterruptedException exc) {
             System.out.println("Main thread interrupted.");
         }
-        System.out.println("ALL DONE!");
+        System.out.println("TICK TOCK ON THE CLOCK!");
     }
 
 }
